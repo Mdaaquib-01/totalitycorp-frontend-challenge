@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: ElectronicArtsText, Verdana, Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+}
+nav {
+
+    
+    .topnav ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 6px 5px 5px;
+    background-color: black;
+    a{
+        text-decoration: none;
+        color: white;
+        opacity: 0.7;
+    }
+    a:hover{
+        opacity: 1;
+    }
+    li{
+        margin: 0 20px;
+    }
+}
+.bottomnav{
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    .mainLogo{
+        z-index: 1;
+    }
+    ul{
+        list-style: armenian;
+    }
+    a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    margin-left: 30px;
+    }
+    a:hover{
+        color:rgb(255, 89, 0);
+    }
+    .dots{
+        margin: 0 10px;
+        cursor: pointer;
+    }
+   .hideimgnav{
+    display: none;
+   }
+   .navbar{
+    display: flex;
+    align-items: center;
+   }
+   .close{
+    display: none;
+   }
+   
+}
+}
+main{
+    .center{
+        background: url("assessts/to-main.jpg") no-repeat bottom/cover;
+        height: 70vh;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h1{
+            // transform: translateX(-380px);
+            position: relative;
+            left: 10vw;
+            // text-align: center;
+            font-size: 2.5rem;
+        }
+        button{
+            width: 200px;
+            font-size: 1.1rem;
+            height: 60px;
+            padding: 10px;
+            text-align: center;
+            background-color: white;
+            border: none;
+            position: relative;
+            margin-top: 20px;
+            left: 10vw;
+                }
+        }
+        .centerContent h1 {
+           text-align: center;
+           margin: 40px 20px;
+        }
+        .centerContent {
+            .gameContainer{
+                // margin: 0 150px;
+                display: grid;
+                grid-template-columns: auto auto;
+                place-items: center;
+                .games{
+                    margin: 20px;
+                    width: 400px;
+                    .gameInner img:hover{
+                        filter: hue-rotate(289deg);
+                    }
+                }
+            }
+            .latest{
+                display: flex;
+                justify-content: center;
+                
+            
+        }
+        }
+}
+.play{
+    background-image: url("assessts/play.jpg");
+    display: grid;
+    place-items: center;
+    height: 50vh;
+    margin-top: 40px;
+    button,h3{
+        color: white;
+        font-weight: normal;
+        padding: 10px;
+    }
+    button{
+        border:solid white 1px;
+        margin-top: 10px;
+    }
+}
+.parents{
+    background-color: #6fb0d6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+}
+.career{
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    .career1{
+        display: flex;
+        p{
+            margin-right: 35px;
+            cursor: pointer;
+        }
+        p:hover{
+            color:rgb(255, 89, 0);
+        }
+    }
+    .career2{
+        font-weight: bold;
+        p{
+            margin-bottom: 15px;
+        }
+        span{
+            margin-right: 15px;
+            cursor: pointer;
+            
+        }
+        i{
+            transition: 0.3s ease all;
+        }
+       i:hover{
+        scale: 1.4;
+       }
+    }
+}
+.footer{
+    padding: 40px;
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    p{
+        cursor: pointer;
+    }
+    .footer1{
+        display: flex;
+       padding: 10px;
+    }
+    .footer1section1{
+        padding: 20px;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        grid-gap: 15px;
+    }
+    .footer1section2{
+        padding: 10px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 15px;
+    }
+}
+.footer2{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+.footer2section1{
+    margin-bottom: 155px;
+}
+.btn{
+    text-align: center;
+    width: 200px;
+    padding: 20px;
+    font-size: 1.3rem;
+    background: transparent;
+    transition: 0.2s ease all;
+}
+.btn:hover{
+    width: 210px;
+}
+@media (max-width:700px){
+        .bottomnav{
+            .navbar{
+                position: absolute;
+                left: -150%;
+                // top:0; left:0; bottom:0;
+                background: whitesmoke;
+                display: flex;
+                align-items: center;
+                // justify-content: space-between;
+                flex-flow: column;
+                padding:8rem 2rem;
+                width: 20rem;
+                text-align: center;
+                transition: .5s;
+                z-index: 2;
+            }
+            .navbar.active{
+                top:0; left:0; bottom:0;
+            }
+            .hideimgnav{
+                display: block !important;
+            }
+            a{
+                margin: 20px 0;
+            }
+            .close{
+                display: block !important;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                cursor: pointer;
+            }
+            div{
+                display: flex;
+                justify-content: center;
+            }
+        } 
+        .center{
+            background: url("assessts/mob-main.jpg")no-repeat !important;
+            background-size: cover !important;
+            height: 120vh !important;
+            display: flex;
+            justify-content: flex-end !important;
+            align-items: center;
+            padding: 40px 0;
+            .centerLogo{
+              width: 100%;
+            }
+            h1{
+                font-size: 1.8rem !important;
+                left: 0vw !important;
+            }
+            button{
+                left: 0vw !important;
+            }
+        }
+        .gameContainer{
+            grid-template-columns: auto !important;
+        }
+        .parents{
+            flex-direction: column;
+            text-align: center;
+        }
+        .career{
+            flex-direction: column;
+        }
+        .career1{
+            display: grid !important;
+            grid-template-columns: auto auto;
+            p{
+                margin-top: 15px;
+            }
+        }
+        .footer{
+            display: flex;
+            flex-direction: column;
+            .footer2section1{
+                margin-bottom: 16px;
+            }
+        }
+}
